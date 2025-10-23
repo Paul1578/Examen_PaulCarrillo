@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Show package.json content
+        run: cat package.json
+
       - name: Run tests
         run: npm test 
