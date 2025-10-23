@@ -18,7 +18,7 @@ app.get('/data', (req, res) => {
   });
 });
 
-// Levanta el servidor
+
 app.listen(port, () => {
   console.log(`App running at http://localhost:${port}`);
 });
