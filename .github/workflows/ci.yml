@@ -3,7 +3,7 @@ name: CI Workflow
 on:
   push:
     branches:
-      - Carrillo
+      - carrillo
 
 jobs:
   test:
@@ -26,3 +26,4 @@ jobs:
 
       - name: Run tests
         run: npm test 
+
