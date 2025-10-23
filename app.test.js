@@ -11,9 +11,11 @@ describe('GET /', () => {
 describe('GET /data', () => {
   it('responds with the data from data.json', async () => {
     const response = await request(app).get('/data');
-    const data = JSON.parse(response.text); 
-    expect(response.status).toBe(200); 
-    expect(data.name).toBe('Examen Proyecto');  
-    expect(data.description).toBe('Aplicación de ejemplo para pruebas.'); 
+    const data = response.body;  
+    expect(response.status).toBe(200);
+    expect(data.name).toBe('Examen Proyecto');
+    expect(data.description).toBe('Aplicación de ejemplo para pruebas.');
   });
 });
+
+
